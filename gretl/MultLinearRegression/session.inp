@@ -1,0 +1,15 @@
+# Log started 2018-04-30 15:18
+# Record of session commands.  Please note that this will
+# likely require editing if it is to be run as a script.
+open C:\Users\jagth\Documents\gretl\MultLinearRegression\50-Startups.csv
+dummify State
+rename 6 NewYork
+rename 7 California
+# model 1
+ols Profit 0 RDSpend Administration MarketingSpend NewYork
+# model 2
+ols Profit 0 RDSpend MarketingSpend NewYork
+# model 3
+ols Profit 0 RDSpend MarketingSpend
+# model 4
+ols Profit 0 RDSpend
