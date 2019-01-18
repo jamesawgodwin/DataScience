@@ -24,5 +24,8 @@ of algorithms that can handle a lot more complexity, a lot more inputs. The down
 **ML and statistics are used to solve different problems**. 
 
 ## What are parameters and linear regression? Answer for a manager - what is the right level of complexity?
-
+With statistics we tend to be happy with smaller data sets, statistical tools tend to struggle with larger datasets.
+With ML you absolutely have to have large datasets, and ML models tend to break down with small datasets.
+A simple way of differentiating whether to use statistics or ML to solve a problem is to look at the amount and complexity
+of the information you have and want to model. Both come down to modeling data ultimately.
 
