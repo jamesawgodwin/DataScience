@@ -8,3 +8,21 @@ an example of this could be building a model that predicts heating costs in a bu
 
 **EXAMPLE FROM PERSONIFY EXPERIENCE**
 
+# Explain Begin Statistics and Machine Learning
+
+## Open-ended question
+A very debated topic. Some people believe that ML is a subset of statistics or is built on statistical theory
+in statistics you want to **test hypotheses**. An example is do right-handed batters hit more homeruns than lefthanded
+batters in baseball. **We can collect the data and do a statistical test to reject the null hypothesis** - a fancy
+way of saying "is there a difference?" Statistics tends to simplify the data, and often times models are linear
+because of this simplification. For instance, the treatment of outliers is very important in statistics. Where 
+in **ML the focus is on predictions**, more generally. Continuing with the baseball example ML can help answer the
+question of what is the probability of a given batter hitting a homerun off a certain pitcher in a certain inning.
+You need a lot more data and a lot more inputs. Statistics likes linear models where as in ML there are classes
+of algorithms that can handle a lot more complexity, a lot more inputs. The downside to that is that complex ML model may have thousands or even millions of parameters. 
+
+**ML and statistics are used to solve different problems**. 
+
+## What are parameters and linear regression? Answer for a manager - what is the right level of complexity?
+
+
