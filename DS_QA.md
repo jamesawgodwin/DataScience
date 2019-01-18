@@ -33,11 +33,11 @@ of the information you have and want to model. Both come down to modeling data u
 
 ## I choose R because it sounds like the data will be in a dataframe, which you have to use Pandas for in python, but in R they are a first class object.
 
-rows_with_outliers <- function(column) {
+rows_with_outliers <- function(column, how_man_sds = 1.5) {
 
   //maximum and minimum value that's not an outlier
-  max <- mean(column) + (1.5 * sd(column))
-  min <- mean(column) - (1.5 * sd(column))
+  max <- mean(column) + (1.5 * how_many_sds(column))
+  min <- mean(column) - (1.5 * how_many_sds(column))
   
   //look in the column and see which rows are below the min or above the max
   
