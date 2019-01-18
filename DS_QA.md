@@ -29,3 +29,23 @@ With ML you absolutely have to have large datasets, and ML models tend to break 
 A simple way of differentiating whether to use statistics or ML to solve a problem is to look at the amount and complexity
 of the information you have and want to model. Both come down to modeling data ultimately.
 
+# Coding question: Write a function which tells you which rows in a column contain an outlier. Use any language youl ike but be prepared to justify your choice.
+
+## I choose R because it sounds like the data will be in a dataframe, which you have to use Pandas for in python, but in R they are a first class object.
+
+rows_with_outliers <- function(column) {
+
+  //maximum and minimum value that's not an outlier
+  max <- mean(column) + (1.5 * sd(column))
+  min <- mean(column) - (1.5 * sd(column))
+  
+  //look in the column and see which rows are below the min or above the max
+  
+  outliers <- column %>% 
+    mutate(outliers = (column < min | column > max))
+    select(outliers)
+  //return a boolean vector with those rows
+    
+    return(outliers)
+
+}
