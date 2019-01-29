@@ -33,6 +33,8 @@ of the information you have and want to model. Both come down to modeling data u
 
 ## I choose R because it sounds like the data will be in a dataframe, which you have to use Pandas for in python, but in R they are a first class object.
 
+### an assumption I make is that 'significance' is defined as +- 1.5 sd, but the variable i created can easily be amended
+
 rows_with_outliers <- function(column, how_man_sds = 1.5) {
 
   //maximum and minimum value that's not an outlier
@@ -49,3 +51,14 @@ rows_with_outliers <- function(column, how_man_sds = 1.5) {
     return(outliers)
 
 }
+ # Second Question
+
+## Working with a vet, you have a dataset that contains the info on the horses that they have treated - you are asked to help design a model that predicts if horse needs surgery. The data file contains some missing values. How do you proceed?
+
+First thing that could be done is that you could drop all rows that contain a missing value (NA), and this is ideal when thre are only one or two missing values. If there are many NA/nulls and the variable is numeric imputation is possible whereby you average the other values for a given column or category and use the average value for that NA - an example is the rectal temperature of the horse - given only a couple NA's the averge imputed value is useful. For a categorical variable, such as abdominal distension, stomach bigness, you could use the most common value, assuming that abdominal distension is rare.
+
+An important part of Data Science is interfacing with the owner of the data. I would ask if my assumptions about the data from the previous paragraph are true - after all the vet is the domain expert on horses and can guide my treatement of missing values in the data set. Not all NAs are the same - the data could be missing, corrupt, or in the case of a healthy horse, not present. The specialized knowledge of the vet will determine if we need a separate dataframe structure, like a branching decision tree where if there is nasogastric reflux we need to worry about the pH and if there isn't we don't. Working with the veterinarian is the best way to build the most robust possible model for this data set.
+
+
+
+
