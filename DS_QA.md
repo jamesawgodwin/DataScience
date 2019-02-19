@@ -60,5 +60,13 @@ First thing that could be done is that you could drop all rows that contain a mi
 An important part of Data Science is interfacing with the owner of the data. I would ask if my assumptions about the data from the previous paragraph are true - after all the vet is the domain expert on horses and can guide my treatement of missing values in the data set. Not all NAs are the same - the data could be missing, corrupt, or in the case of a healthy horse, not present. The specialized knowledge of the vet will determine if we need a separate dataframe structure, like a branching decision tree where if there is nasogastric reflux we need to worry about the pH and if there isn't we don't. Working with the veterinarian is the best way to build the most robust possible model for this data set.
 
 
+# Third Question
+
+## When using imputation should you use the median or the mean of the data?
+
+A bad joke goes - when Bill Gates walks into the bar the average bar patron becomes a millionaire! Haha but this demonstrates the danger of using the mean when calculating imputation - **it can skew your data**. Replacing missing data with the average can result in an artificially high number for them, where as with the median you are more likely to get data that reflects the general population.
+
+# Fourth Question
+
 
 
