@@ -68,5 +68,11 @@ A bad joke goes - when Bill Gates walks into the bar the average bar patron beco
 
 # Fourth Question
 
+## Explain the distinction between REGRESSION and CLASSIFICATION
 
+Regression is used when you are trying to predict a continuous output/variable, like temperature, salary, or stock price: there are infinitely many values. Classification is when you predict a predefined category or class - e.g., is a sample participant male or female.
+
+# Fifth Question
+
+##
 
