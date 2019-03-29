@@ -72,6 +72,10 @@ A bad joke goes - when Bill Gates walks into the bar the average bar patron beco
 
 Regression is used when you are trying to predict a continuous output/variable, like temperature, salary, or stock price: there are infinitely many values. Classification is when you predict a predefined category or class - e.g., is a sample participant male or female.
 
+For regression, the way to evaluate the model performance is with a metric called RMSE (Root Mean Squared Error). It is calculated as the root of the mean of the squared differences between the predictions and the real values.
+
+However, for things like stock price prediction, evaluating the model with the RMSE does not make much sense, since we are more interested in the directions taken by our predictions, rather than the closeness of their values to the real stock price. We want to check if our predictions follow the same directions as the real stock price
+
 # Fifth Question
 
 ##
