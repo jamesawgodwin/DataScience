@@ -77,7 +77,8 @@ For regression, the way to evaluate the model performance is with a metric calle
 However, for things like stock price prediction, evaluating the model with the RMSE does not make much sense, since we are more interested in the directions taken by our predictions, rather than the closeness of their values to the real stock price. We want to check if our predictions follow the same directions as the real stock price
 
 # What is supervised machine learning? 👶
-Training the machine with data that is previously labeled - the opposite is unsupervised where the machine looks for clusters/associations in the data for groups to give labels to.
+Training the machine with data that is previously labeled - the opposite is unsupervised where the machine looks for clusters/associations in the data for groups to give labels to. If somebody, besides the algorithm, specifies the outcomes, then it is supervised learning.  Specifying an outcome is the same as assigning an expert label. If the data are partitioned based on intrinsic characteristics, then the technology is unsupervised learning.
+
 ## Regression:predict a single (continuous) output value using training data.
 Example: You can use regression to predict the house price from training data. The input variables will be locality, size of a house, etc.
 ## Classification: group the output inside a class. 
